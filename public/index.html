@@ -1,0 +1,353 @@
+<html theme='dark' lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" href="./favicon/favicon.ico">
+	<title>Mowidev</title>
+	<!-- Bootstrap 5 CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	</script>
+	<!-- AnimateOnScroll CDN -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- FontAwesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+	<div class="TopBar" data-aos="fade-down" data-aos-duration="1500">
+		<center><img src="./LogoFlat.png" width="50" height="50" alt="Mowidev Whale Logo"></center>
+		<div class="position-relative top-50 end-0 translate-middle-y">
+			<label id="switch" class="switch" data-aos="fade-right" data-aos-duration="1500">
+				<input class="myCheck" id="mySwitch" type="checkbox" onchange="toggleTheme()">
+				<span class="slider round"></span>
+			</label>
+			<!--<button id="theme-toggler" onclick="toggleTheme()" class="btn btn-link btn-sm ml-2 small" type="button">
+				<span class="d-block-light d-none"><i class="fas fa-moon fa-2x"></i></i></span>
+				<span class="d-block-dark d-none"><i class="fas fa-sun fa-2x"></i></i></span>
+			</button>-->
+		</div>
+		<!--<h1 class="Title">Mowidev</h1>-->
+	</div>
+	<div class="Container position-absolute start-50 translate-middle-x">
+		<!-- Row 1 -->
+		<div class="row" data-aos="zoom-in" data-aos-duration="1500">
+			<!-- Main Card -->
+			<div class="baseCol col1 col-7 ms-auto">
+				<!-- InnerCard -->
+				<div class="innerCard">
+					<h1 class="cardTitle"> Mowidev </h1>
+					<h1 class="cardP"> Creamos software para cambiar el mundo. </h1>
+					<button type="button" class="baseBtn btn1"> Contactanos </button>
+				</div>
+			</div>
+			<!-- Card 2 -->
+			<div class="baseCol col2 col-4 ms-auto">
+				<div class="innerCard">
+					<center><i class="fas fa-users fa-2x"></i></center>
+					<h1 class="cardTitle">Equipo Experimentado</h1>
+					<h1 class="cardP">Conoce al equipo que está detras de todos los proyectos.</h1>
+					<center><button type="button" onclick="location.href='#MowiTeam';" class="baseBtn btn2"> Conocenos
+						</button></center>
+				</div>
+			</div>
+		</div>
+		<!-- Row 2 -->
+		<div class="row" data-aos="zoom-in" data-aos-duration="1500">
+			<!-- Card 3 -->
+			<div class="baseCol col3 col">
+				<div class="innerCard">
+					<center><i class="fas fa-code fa-2x"></i></center>
+					<h1 class="cardTitle">Nuestros servicios</h1>
+					<h1 class="cardP">
+						>  Consultoria de sistemas <br>
+						>  Desarrollo web <br>
+						>  Extranets <br>
+						>  Software a medida <br>
+						>  Desarrollo de Apps Móviles
+					</h1>
+				</div>
+			</div>
+			<!-- Card 4 -->
+			<div class="baseCol col4 col">
+				<div class="innerCard">
+					<center><i class="fas fa-laptop fa-2x"></i></center>
+					<h1 class="cardTitle">Desarrollo web</h1>
+					<h1 class="cardP">Lleva tu sitio web al proximo nivel, con las mejores y ultimas tecnologias <br>
+						Aplicadas por un equipo de profesionales.
+					</h1>
+				</div>
+			</div>
+			<!-- Card 5 -->
+			<div class="baseCol col5 col">
+				<div class="innerCard">
+					<center><i class="fas fa-trophy fa-2x"></i></center>
+					<h1 class="cardTitle">Conoce nuestros proyectos</h1>
+					<h1 class="cardP">Ve los proyectos en los que mowidev formó parte.</h1>
+					<center><button type="button" onclick="location.href='#MowiProyectos';" class="baseBtn btn5"> Proyectos
+						</button></center>
+				</div>
+			</div>
+		</div>
+		<!-- Row 3 -->
+		<div class="row justify-content-center" data-aos="zoom-in" data-aos-duration="1500">
+			<!-- Card 6 -->
+			<div class="baseCol col6 col col-sm-8 col-md-8">
+				<div class="innerCard">
+					<h3 class="cardTitle">Tecnologias que usamos</h3>
+					<center>
+						<div class="techUsed">
+							<span> <i class="fab fa-aws fa-2x"></i> </span>
+							<span> <i class="fab fa-vuejs fa-2x"></i> </span>
+							<span> <i class="fab fa-js-square fa-2x"></i> </span>
+							<span> <i class="fab fa-digital-ocean fa-2x"></i> </span>
+							<span> <i class="fab fa-wordpress-simple fa-2x"></i> </span>
+							<span> <i class="fab fa-gitlab fa-2x"></i> </span>
+						</div>
+					</center>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="MowiTeam" data-aos="zoom-in" data-aos-duration="1500">
+			<!-- Card 7 -->
+			<div class="col7 col">
+				<div class="innerCard">
+					<h1 class="cardTitle">Team Mowi</h1>
+					<center><span> <i class="fas fa-chevron-down fa-lg"></i> </span>
+					</center>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<!-- Mowi Card -->
+			<div class="baseCol col4 col col-4" data-aos="fade-right" data-aos-duration="1500">
+				<div class="innerCard">
+					<center><i class="fas fa-user-tie fa-2x"></i></center>
+					<h1 class="cardTitle">Edgar Quiquia</h1>
+					<h1 class="cardP">CTO</h1>
+				</div>
+			</div>
+			<!-- Mowi Card -->
+			<div class="baseCol col4 col col-4" data-aos="fade-left" data-aos-duration="1500">
+				<div class="innerCard">
+					<center><i class="fas fa-user-tie fa-2x"></i></center>
+					<h1 class="cardTitle">Julio Sánchez</h1>
+					<h1 class="cardP">CEO</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center" data-aos="zoom-in-up" data-aos-duration="1500">
+			<!-- Mowi Card -->
+			<div class="baseCol col6 col col-3">
+				<div class="innerCard">
+					<center><i class="fas fa-user fa-2x fa-mowi"></i></center>
+					<h1 class="cardTitle">Aristides</h1>
+					<h1 class="cardP">Desarrollador<br>Fullstack</h1>
+				</div>
+			</div>
+			<!-- Mowi Card -->
+			<div class="baseCol col6 col col-3">
+				<div class="innerCard">
+					<center><i class="fas fa-user-edit fa-2x fa-mowi"></i></center>
+					<h1 class="cardTitle">José Vilca</h1>
+					<h1 class="cardP">Diseñador</h1>
+				</div>
+			</div>
+			<!-- Mowi Card -->
+			<div class="baseCol col6 col col-3">
+				<div class="innerCard">
+					<center><i class="fas fa-user-cog fa-2x fa-mowi"></i></center>
+					<h1 class="cardTitle">Altahir</h1>
+					<h1 class="cardP">Desarrollador<br>Backend</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center" data-aos="zoom-in-up" data-aos-duration="1500">
+			<!-- Mowi Card -->
+			<div class="baseCol col6 col col-3">
+				<div class="innerCard">
+					<center><i class="fas fa-user fa-2x fa-mowi"></i></center>
+					<h1 class="cardTitle">Ricardo Obeso</h1>
+					<h1 class="cardP">Gestor de proyectos</h1>
+				</div>
+			</div>
+			<!-- Mowi Card -->
+			<div class="baseCol col6 col col-3">
+				<div class="innerCard">
+					<center><i class="fas fa-user fa-2x fa-mowi""></i></center>
+						<h1 class=" cardTitle">Jean Marco Silva</h1>
+							<h1 class="cardP">Desarrollador<br>Mobile</h1>
+				</div>
+			</div>
+			<!-- Mowi Card -->
+			<div class="baseCol col6 col col-3">
+				<div class="innerCard">
+					<center><i class="fas fa-user-cog fa-2x fa-mowi"></i></center>
+					<h1 class="cardTitle">Lucas Bois</h1>
+					<h1 class="cardP">Desarrollador<br>Backend</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="MowiProyectos" data-aos="fade-down" data-aos-duration="1500">
+			<!-- Card 7 -->
+			<div class="baseCol col7 col">
+				<div class="innerCard">
+					<h1 class="cardTitle">Proyectos</h1>
+					<center><span> <i class="fas fa-chevron-down fa-lg"></i> </span>
+					</center>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<!-- Mowi Card -->
+			<div class="baseCol col3 col" data-aos="fade-right" data-aos-duration="1500">
+				<div class="innerCard">
+					<center><i class="fas fa-futbol fa-2x"></i></center>
+					<h1 class="cardTitle">Saca tu cancha</h1>
+					<h1 class="cardP">Una solución innovadora para poder
+						reservar campos deportivos desde una
+						App. Parte del producto entregado incluyó
+						una intranet para poder gestionar a los
+						propietarios de campos afiliados al sistema
+						y el manejo de las reservas.
+					</h1>
+					<center>
+						<span class="badge badge-pill badge1">App Mobile</span>
+						<span class="badge badge-pill badge1">Intranet</span>
+					</center>
+				</div>
+			</div>
+			<!-- Mowi Card -->
+			<div class="baseCol col2 col" data-aos="fade-left" data-aos-duration="1500">
+				<div class="innerCard">
+					<center><i class="fas fa-dog fa-2x"></i></center>
+					<h1 class="cardTitle">Doggo</h1>
+					<h1 class="cardP">Startup incubada de la UPC, plataforma
+						que junta a personas amantes de sus
+						mascotas con paseadores de perros de su
+						localidad mediante una solución
+						tecnológica. Aplicación móvil e Intranet
+					</h1>
+					<center>
+						<span class="badge badge-pill badge2">App Mobile</span>
+						<span class="badge badge-pill badge2">Intranet</span>
+					</center>
+
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<!-- Mowi Card -->
+			<div class="baseCol col4 col" data-aos="fade-right" data-aos-duration="1500">
+				<div class="innerCard">
+					<center><i class="fas fa-clipboard fa-2x"></i></center>
+					<h1 class="cardTitle">AudEx</h1>
+					<h1 class="cardP">Un sistema dinámico para poder auditar
+						centros de comida desde una App. Parte
+						del producto entregado incluyó una
+						intranet para la gestión de los locales,
+						preguntas y reportes.
+					</h1>
+					<center>
+						<span class="badge badge-pill badge3">App Mobile</span>
+						<span class="badge badge-pill badge3">Intranet</span>
+					</center>
+				</div>
+			</div>
+			<!-- Mowi Card -->
+			<div class="baseCol col5 col" data-aos="fade-left" data-aos-duration="1500">
+				<div class="innerCard">
+					<center><i class="fas fa-horse fa-2x"></i></center>
+					<h1 class="cardTitle">Horse MNG</h1>
+					<h1 class="cardP">
+						Un sistema para el cuidado, presentación y
+						negocio de caballos, con información
+						recolectada de base de datos de Panamá,
+						Argentina y Perú, con visualización desde
+						una App.
+					</h1>
+					<center>
+						<span class="badge badge-pill badge4">App Mobile</span>
+					</center>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<!-- Mowi Card -->
+			<div class="baseCol col8 col" data-aos="fade-right" data-aos-duration="1500">
+				<div class="innerCard">
+					<center><i class="fas fa-water fa-2x"></i></center>
+					<h1 class="cardTitle">Aquafrost</h1>
+					<h1 class="cardP">Sitio web completo de gran impacto aún
+						en desarrollo, para empresa que exporta e
+						importa productos marinos. Incluye una
+						intranet para gestión de sus productos y
+						seguimiento de contactos.
+					</h1>
+					<center>
+						<span class="badge badge-pill badge5">Sitio Web</span>
+						<span class="badge badge-pill badge5">Intranet</span>
+					</center>
+				</div>
+			</div>
+			<!-- Mowi Card -->
+			<div class="baseCol col2 col" data-aos="fade-left" data-aos-duration="1500">
+				<div class="innerCard">
+					<center><i class="fas fa-plus fa-2x"></i></center>
+					<h1 class="cardTitle">Crea+</h1>
+					<h1 class="cardP">Es una ONG de voluntariado profesional en
+						educación que promueve la
+						Responsabilidad Social Individual, se está
+						migrando su intranet encargado de
+						manejar todo el proceso de reclutamiento,
+						capacitación, matrícula, enseñanza ,
+						seguimiento y reportería de la empresa.
+					</h1>
+					<center>
+						<span class="badge badge-pill badge2">App Mobile</span>
+						<span class="badge badge-pill badge2">Intranet</span>
+					</center>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer class="page-footer blue">
+			<div class="container-fluid text-center text-md-left">
+				<div class="footer-copyright text-center py-3"> 2021 © Made with <i class="fas fa-heart fa-lg"></i> by
+					Lucas Bois</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init();
+	function setTheme(themeName) {
+		localStorage.setItem('theme', themeName);
+		document.documentElement.className = themeName;
+	}
+	function toggleTheme() {
+		if (localStorage.getItem('theme') === 'theme-dark') {
+			setTheme('theme-light');
+		} else {
+			setTheme('theme-dark');
+		}
+	}
+	(function () {
+		console.log(localStorage.getItem('theme'));
+		if (localStorage.getItem('theme') === 'theme-dark') {
+			setTheme('theme-dark');
+			document.getElementById("mySwitch").checked = false;
+		} else {
+			setTheme('theme-light');
+			document.getElementById("mySwitch").checked = true;
+		}
+	})();
+</script>
+
+</html>

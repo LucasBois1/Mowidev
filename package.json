@@ -1,0 +1,14 @@
+{
+  "name": "mowidev",
+  "version": "0.0.1",
+  "description": "mowidev's landing page",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "lucas Bois",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

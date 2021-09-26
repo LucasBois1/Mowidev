@@ -1,0 +1,441 @@
+/* Fonts */
+@font-face {
+    font-family: 'Font_Regular';
+    src: url(../fonts/Font_Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Font_BoldItalic';
+    src: url(../fonts/Font_BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Font_Medium';
+    src: url(../fonts/Font_Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Font_SemiBold';
+    src: url(../fonts/Font_SemiBold.ttf);
+}
+
+/* Themes */
+.theme-light {
+    /* Base Colors */
+    --White: #FFFFFF;
+    --Black: #000000;
+    --Background: #FFFFFF;
+    --Text: #000000;
+    --Badge-Text: #FFFFFF;
+    --TopBar-Background: rgb(52, 142, 226);
+    /* Blue */
+    --Blue: #176ebe;
+    --Light-Blue: #99ceff;
+    /* Green */
+    --Green: #0a8140;
+    --Light-Green: #b3e9cb;
+    /* Pink */
+    --Pink: #c958d1;
+    --Light-Pink: #eec1f1;
+    /* Red */
+    --Red: #ce7e7e;
+    --Light-Red: #ffbfbf;
+    /* Yellow */
+    --Yellow: #c08937;
+    --Light-Yellow: #ffddab;
+    /* Purple */
+    --Purple: #6664af;
+    --Light-Purple: #c3c1f1;
+    /* Grey */
+    --Grey: #252525;
+    --Light-Grey: #7c7c7c;
+}
+
+.theme-dark {
+    /* Base Colors */
+    --White: #FFFFFF;
+    --Black: #000000;
+    --Text: #FFFFFF;
+    --Badge-Text: #313131;
+    --Background: #313131;
+    --TopBar-Background: rgb(27, 83, 136);
+    /* Blue */
+    --Blue: #99ceff;
+    --Light-Blue: #176ebe;
+    /* Green */
+    --Green: #b3e9cb;
+    --Light-Green: #0a8140;
+    /* Pink */
+    --Pink: #eec1f1;
+    --Light-Pink: #c958d1;
+    /* Red */
+    --Red: #ffbfbf;
+    --Light-Red: #ce7e7e;
+    /* Yellow */
+    --Yellow: #ffddab;
+    --Light-Yellow: #c08937;
+    /* Purple */
+    --Purple: #c3c1f1;
+    --Light-Purple: #6664af;
+    /* Grey */
+    --Grey: #a7a4a4;
+    --Light-Grey: #252525;
+}
+
+html[theme='light'] .d-block-light,
+html[theme='dark'] .d-block-dark {
+    display: block !important;
+}
+
+body {
+    background-color: var(--Background) !important;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 8px;
+    color: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--Background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--Light-Blue);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--Blue);
+}
+
+.text-center {
+    font-family: 'Font_SemiBold';
+    color: var(--Text);
+}
+
+/* Theme Toggler */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3vw;
+    height: 2vw;
+    margin-left: 5%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white url('https://img.icons8.com/ios-glyphs/25/000000/moon-symbol.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input:checked+.slider {
+    background-color: var(--Light-Blue);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--Blue);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(1.5vw);
+    -ms-transform: translateX(1.5vw);
+    transform: translateX(1.5vw);
+    background: white url('https://img.icons8.com/ios-glyphs/25/000000/sun--v1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Icons */
+.fas .fab {
+    padding: .25em;
+}
+.fab, .fa-mowi, .fa-water {
+    color: var(--Blue);
+}
+.fa-laptop, .fa-user-tie, .fa-clipboard {
+    color: var(--Yellow);
+}
+.fa-trophy, .fa-horse {
+    color: var(--Purple);
+}
+.fa-users, .fa-dog, .fa-plus {
+    color: var(--Pink);
+}
+.fa-code, .fa-futbol {
+    color: var(--Red);
+}
+.fa-chevron-down,.fa-moon {
+    color: var(--Grey);
+}
+.fa-sun {
+    color: var(--Light-Yellow);
+}
+.fa-heart {
+    color: red;
+}
+
+/* Badges */
+.badge {
+    color: var(--Badge-Text) !important;
+}
+.badge1 {
+    background-color: var(--Red);
+}
+.badge2 {
+    background-color: var(--Pink);
+}
+.badge3 {
+    background-color: var(--Yellow);
+}
+.badge4 {
+    background-color: var(--Purple);
+}
+.badge5 {
+    background-color: var(--Blue);
+}
+
+/* NavBar */
+.Title {
+    font-family: 'Font_SemiBold';
+    font-size: 2.5vw;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 0;
+    color: var(--White);
+}
+
+.TopBar {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background-color: var(--TopBar-Background);
+}
+
+/* Tags */
+#MowiProyectos,
+#MowiTeam {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.Container {
+    width: 70%;
+    margin: 0;
+    margin-top: 3%;
+}
+.row {
+    height: fit-content;
+    margin: 1%;
+}
+.btn {
+    font-family: 'Font_Medium';
+}
+
+/* Base Col */
+.baseCol {
+    border-radius: 5px;
+    margin: 2%;
+}
+.innerCard {
+    padding: 1em;
+    max-height: min-content;
+}
+.cardTitle {
+    font-family: 'Font_BoldItalic';
+    font-size: 2vw;
+    margin: 0;
+    text-align: center;
+}
+.cardP {
+    font-family: 'Font_Medium';
+    font-size: 1.5vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+}
+.baseBtn {
+    padding: .25em;
+    border-radius: 5px;
+    border: 3px solid #ffffff00;
+    font-family: 'Font_Medium';
+    font-size: 2vw;
+}
+
+/* Column 1 */
+.col1 {
+    background-color: var(--Light-Green);
+}
+.col1 .cardTitle {
+    color: var(--Green);
+    text-align: left;
+    font-size: 3.5vw; 
+}
+.col1 .cardP {
+    color: var(--Green);
+    width: 50%;
+}
+.btn1 {
+    background-color: var(--Light-Green);
+    color: var(--Green);   
+}
+.btn1:hover {
+    border: 3px solid var(--Green);
+}
+
+/* Column 2 */
+.col2 {
+    background-color: var(--Light-Pink);
+}
+.col2 .cardTitle {
+    color: var(--Pink);
+    margin: 0 0 .5em;
+}
+.col2 .cardP {
+    color: var(--Pink);
+    text-align: center;
+}
+.btn2 {
+    background-color: var(--Light-Pink);
+    color: var(--Pink);
+}
+.btn2:hover {
+    border: 3px solid var(--Pink);
+}
+
+/* Column 3 */
+.col3 {
+    background-color: var(--Light-Red);
+}
+.col3 .cardTitle {
+    color: var(--Red);
+    margin: 0 0 .5em;
+}
+.col3 .cardP {
+    color: var(--Red);
+}
+
+/* Column 4 */
+.col4 {
+    background-color: var(--Light-Yellow);
+}
+.col4 .cardTitle {
+    color: var(--Yellow);
+    margin: 0 0 .5em;
+}
+.col4 .cardP {
+    color: var(--Yellow);
+    text-align: center;
+}
+
+/* Column 5 */
+.col5 {
+    background-color: var(--Light-Purple);
+}
+.col5 .cardTitle {
+    color: var(--Purple);
+    margin: 0 0 .5em;
+}
+.col5 .cardP {
+    color: var(--Purple);
+    text-align: center;
+}
+.btn5 {
+    background-color: var(--Light-Purple);
+    color: var(--Purple);
+}
+.btn5:hover {
+    border: 3px solid var(--Purple);
+}
+
+/* Column 6 */
+.col6 {
+    background-color: var(--Light-Blue);
+}
+.col6 .cardTitle {
+    color: var(--Blue);
+    margin: 0;
+}
+.col6 .cardP {
+    color: var(--Blue);
+    text-align: center;
+}
+
+/* Column 7 */
+.col7 {
+    background-color: var(--Light-Grey);
+    border-radius: 5px;
+    margin: 2%;
+    margin-bottom: .5%;
+    min-height: auto;
+}
+
+.col7 .innerCard {
+    padding: 1em;
+    max-height: min-content;
+}
+
+.col7 .cardTitle {
+    color: var(--Grey);
+    margin: 0 0 15px;
+}
+
+/* Column 8 */
+.col8 {
+    background-color: var(--Light-Blue);
+}
+.col8 .cardTitle {
+    color: var(--Blue);
+    margin: 0 0 .5em;
+}
+.col8 .cardP {
+    color: var(--Blue);
+}
+
+.techUsed {
+    margin-top: .5%;
+    padding: .25vw;
+}
+
+.page-footer {
+    margin-top: 0vh;
+}
