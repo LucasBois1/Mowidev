@@ -1,0 +1,36 @@
+@import "themes.css";
+@import "all.css";
+
+.baseCol {
+    border-radius: 5px;
+    margin: 2%;
+}
+.innerCard {
+    padding: 5%;
+    max-height: min-content;
+}
+.cardTitle {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+.cardP {
+    font-size: 2rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+}
+.baseBtn {
+    padding: .25em;
+    border-radius: 5px;
+    border: 3px solid #ffffff00;
+    font-size: 1.5rem;
+}
+
+.mowiFounder {
+    max-width: 20vw !important;
+}
+
+.col1 .cardTitle {
+    font-size: 4rem;
+}

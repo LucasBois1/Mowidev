@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Font_Regular';
+    src: url(../fonts/Font_Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Font_BoldItalic';
+    src: url(../fonts/Font_BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Font_Medium';
+    src: url(../fonts/Font_Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Font_SemiBold';
+    src: url(../fonts/Font_SemiBold.ttf);
+}
+
+.cardTitle {
+    font-family: 'Font_BoldItalic';
+}
+
+.btn, .cardP, .baseBtn {
+    font-family: 'Font_Medium';
+}

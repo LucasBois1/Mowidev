@@ -1,0 +1,173 @@
+/* Themes */
+.theme-light {
+    /* Base Colors */
+    --White: #FFFFFF;
+    --Black: #000000;
+    --Background: #FFFFFF;
+    --Text: #000000;
+    --Badge-Text: #FFFFFF;
+    --TopBar-Background: rgb(52, 142, 226);
+    /* Blue */
+    --Blue: #176ebe;
+    --Light-Blue: #99ceff;
+    /* Green */
+    --Green: #0a8140;
+    --Light-Green: #b3e9cb;
+    /* Pink */
+    --Pink: #c958d1;
+    --Light-Pink: #eec1f1;
+    /* Red */
+    --Red: #ce7e7e;
+    --Light-Red: #ffbfbf;
+    /* Yellow */
+    --Yellow: #c08937;
+    --Light-Yellow: #ffddab;
+    /* Purple */
+    --Purple: #6664af;
+    --Light-Purple: #c3c1f1;
+    /* Grey */
+    --Grey: #252525;
+    --Light-Grey: #7c7c7c;
+}
+
+.theme-dark {
+    /* Base Colors */
+    --White: #FFFFFF;
+    --Black: #000000;
+    --Text: #FFFFFF;
+    --Badge-Text: #313131;
+    --Background: #313131;
+    --TopBar-Background: rgb(27, 83, 136);
+    /* Blue */
+    --Blue: #99ceff;
+    --Light-Blue: #176ebe;
+    /* Green */
+    --Green: #b3e9cb;
+    --Light-Green: #0a8140;
+    /* Pink */
+    --Pink: #eec1f1;
+    --Light-Pink: #c958d1;
+    /* Red */
+    --Red: #ffbfbf;
+    --Light-Red: #ce7e7e;
+    /* Yellow */
+    --Yellow: #ffddab;
+    --Light-Yellow: #c08937;
+    /* Purple */
+    --Purple: #c3c1f1;
+    --Light-Purple: #6664af;
+    /* Grey */
+    --Grey: #a7a4a4;
+    --Light-Grey: #252525;
+}
+
+body {
+    background-color: var(--Background) !important;
+}
+
+.TopBar {
+    background-color: var(--TopBar-Background);
+}
+
+input:checked + .slider {
+    background-color: var(--Blue);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--Blue);
+}
+
+::-webkit-scrollbar {
+    color: #000000;
+}
+::-webkit-scrollbar-track {
+    background: var(--Background);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--Light-Blue);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--Blue);
+}
+
+.text-center {
+    color: var(--Text);
+}
+/* Column 1 */
+.col1 {
+    background-color: var(--Light-Green);
+}
+.col1 .cardTitle {
+    color: var(--Green);
+}
+.col1 .cardP {
+    color: var(--Green);
+}
+.btn1 {
+    background-color: var(--Light-Green);
+    color: var(--Green);   
+}
+
+/* Column 2 */
+.col2 {
+    background-color: var(--Light-Pink);
+}
+.col2 .cardTitle, .col2 .cardP {
+    color: var(--Pink);
+}
+.btn2 {
+    background-color: var(--Light-Pink);
+    color: var(--Pink);
+}
+
+/* Column 3 */
+.col3 {
+    background-color: var(--Light-Red);
+}
+.col3 .cardTitle, .col3 .cardP {
+    color: var(--Red);
+}
+
+/* Column 4 */
+.col4 {
+    background-color: var(--Light-Yellow);
+}
+.col4 .cardTitle, .col4 .cardP {
+    color: var(--Yellow);
+}
+
+/* Column 5 */
+.col5 {
+    background-color: var(--Light-Purple);
+}
+.col5 .cardTitle, .col5 .cardP {
+    color: var(--Purple);
+}
+.btn5 {
+    background-color: var(--Light-Purple);
+    color: var(--Purple);
+}
+
+/* Column 6 */
+.col6 {
+    background-color: var(--Light-Blue);
+}
+.col6 .cardTitle, .col6 .cardP {
+    color: var(--Blue);
+}
+
+/* Column 7 */
+.col7 {
+    background-color: var(--Light-Grey);
+}
+.col7 .cardTitle {
+    color: var(--Grey);
+}
+
+/* Column 8 */
+.col8 {
+    background-color: var(--Light-Blue);
+}
+.col8 .cardTitle, .col8 .cardP {
+    color: var(--Blue);
+}

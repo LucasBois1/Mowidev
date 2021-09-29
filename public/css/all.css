@@ -1,0 +1,203 @@
+@import "fonts.css";
+
+html[theme='light'] .d-block-light,
+html[theme='dark'] .d-block-dark {
+    display: block !important;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
+
+.text-center {
+    font-family: 'Font_SemiBold';
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+/* Theme Toggler */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3vw;
+    height: 2vw;
+    margin-left: 5%;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white url('https://img.icons8.com/ios-glyphs/25/000000/moon-symbol.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+    background: white url('https://img.icons8.com/ios-glyphs/25/000000/sun--v1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Tags */
+#MowiProyectos,
+#MowiTeam {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Icons */
+.fas .fab {
+    padding: .25em;
+}
+.fab, .fa-mowi, .fa-water {
+    color: var(--Blue);
+}
+.fa-laptop, .fa-user-tie, .fa-clipboard {
+    color: var(--Yellow);
+}
+.fa-trophy, .fa-horse {
+    color: var(--Purple);
+}
+.fa-users, .fa-dog, .fa-plus {
+    color: var(--Pink);
+}
+.fa-code, .fa-futbol {
+    color: var(--Red);
+}
+.fa-chevron-down,.fa-moon {
+    color: var(--Grey);
+}
+.fa-sun {
+    color: var(--Light-Yellow);
+}
+.fa-heart {
+    color: red;
+}
+
+/* Badges */
+.badge {
+    color: var(--Badge-Text) !important;
+}
+.badge1 {
+    background-color: var(--Red);
+}
+.badge2 {
+    background-color: var(--Pink);
+}
+.badge3 {
+    background-color: var(--Yellow);
+}
+.badge4 {
+    background-color: var(--Purple);
+}
+.badge5 {
+    background-color: var(--Blue);
+}
+
+/* NavBar */
+.TopBar {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.Container {
+    width: 70%;
+    margin: 0;
+    margin-top: 3%;
+}
+.row {
+    height: fit-content;
+    margin: 1%;
+}
+
+.col1 .cardTitle {
+    text-align: left;
+    font-size: 3.5vw; 
+}
+.col1 .cardP {
+    width: 50%;
+}
+.btn1:hover {
+    border: 3px solid var(--Green);
+}
+
+.col2 .cardTitle, .col3 .cardTitle, .col4 .cardTitle, .col5 .cardTitle, .col8 .cardTitle {
+    margin: 0 0 .5em;
+}
+.col6 .cardTitle {
+    margin: 0;
+}
+
+.col2 .cardP, .col4 .cardP, .col5 .cardP, .col6 .cardP {
+    text-align: center;
+}
+
+.btn2:hover {
+    border: 3px solid var(--Pink);
+}
+
+.btn5:hover {
+    border: 3px solid var(--Purple);
+}
+
+/* Column 7 */
+.col7 {
+    border-radius: 5px;
+    margin: 2%;
+    margin-bottom: .5%;
+    min-height: auto;
+}
+.col7 .innerCard {
+    padding: 1em;
+    max-height: min-content;
+}
+.col7 .cardTitle {
+    margin: 0 0 15px;
+}
+
+.techUsed {
+    margin-top: .5%;
+    padding: .25vw;
+}
+
+.page-footer {
+    margin-top: 0;
+}
